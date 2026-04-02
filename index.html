@@ -3,835 +3,318 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Best travel deals 2026: Cheap flights with Aviasales, eSIM data (Airalo, Yesim, Saily), Klook tours & attractions, NordVPN, Remitly money transfer, and flight compensation.">
-  <title>TravelHackHub – Best Travel Deals & Savings 2026</title>
+  <meta name="description" content="Best travel deals & tools 2026: Cheap flights, eSIMs, tours, VPN, money transfers & more. Real rankings and honest reviews.">
+  <title>TravelHackHub – Best Travel Tools & Deals 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --ink: #1a1208;
       --cream: #f5f0e8;
-      --white: #ffffff;
       --amber: #c97d2e;
       --amber-light: #e8a84a;
       --amber-dark: #8c4f10;
       --warm-gray: #8a7d6b;
-      --card-bg: #ffffff;
-      --border: rgba(201,125,46,0.18);
-      --nav-bg: #ffffff;
-      --hero-bg: #fdf8f2;
+      --white: #ffffff;
+      --border: rgba(201,125,46,0.22);
     }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 900; }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; }
-
-    /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--white);
+      background: var(--white); height: 72px;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 48px;
-      height: 64px;
-      border-bottom: 2px solid var(--border);
-      box-shadow: 0 2px 12px rgba(26,18,8,0.06);
+      padding: 0 40px; border-bottom: 2px solid var(--border);
+      box-shadow: 0 4px 15px rgba(26,18,8,0.07);
     }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem; font-weight: 900;
-      color: var(--amber-dark);
-      text-decoration: none;
-    }
-    .nav-links { list-style: none; display: flex; gap: 36px; }
-    .nav-links a {
-      color: var(--warm-gray);
-      text-decoration: none;
-      font-size: 0.82rem; font-weight: 500;
-      letter-spacing: 1.5px; text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--amber); }
+    .nav-logo { font-size: 1.7rem; color: var(--amber-dark); text-decoration: none; }
 
-    /* ── HERO ── */
     .hero {
-      background: var(--hero-bg);
-      position: relative; overflow: hidden;
-      padding: 90px 48px 70px;
-      text-align: center;
-      border-bottom: 2px solid var(--border);
+      background: linear-gradient(135deg, #fdf8f2, #f8f0e0);
+      padding: 110px 40px 90px; text-align: center;
     }
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,125,46,0.10) 0%, transparent 70%);
-      pointer-events: none;
+    .hero-badge {
+      background: var(--amber); color: white;
+      padding: 8px 22px; border-radius: 9999px;
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 2px;
+      display: inline-block; margin-bottom: 16px;
     }
-    .hero-eyebrow {
-      display: inline-block;
-      font-size: 0.72rem; font-weight: 600;
-      letter-spacing: 3px; text-transform: uppercase;
-      color: var(--amber);
-      border: 1px solid var(--amber);
-      padding: 4px 14px; border-radius: 2px;
-      margin-bottom: 28px;
-    }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(3rem, 7vw, 5.5rem);
-      font-weight: 900; line-height: 1.04;
-      color: var(--ink);
-      letter-spacing: -2px;
-      margin-bottom: 24px;
-    }
+    .hero h1 { font-size: clamp(2.9rem, 7vw, 5rem); margin-bottom: 24px; }
     .hero h1 em { font-style: italic; color: var(--amber); }
-    .hero-sub {
-      font-size: 1.05rem; color: var(--warm-gray);
-      max-width: 580px; margin: 0 auto 40px;
-      font-weight: 300; line-height: 1.7;
-    }
-    .hero-tags {
-      display: flex; flex-wrap: wrap; gap: 10px;
-      justify-content: center;
-    }
-    .hero-tag {
-      background: var(--white);
-      color: var(--amber-dark);
-      border: 1.5px solid var(--border);
-      padding: 8px 18px;
-      border-radius: 100px;
-      font-size: 0.82rem; font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-      box-shadow: 0 1px 4px rgba(26,18,8,0.06);
-    }
-    .hero-tag:hover {
-      background: var(--amber);
-      color: var(--white);
-      border-color: var(--amber);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(201,125,46,0.3);
-    }
+    .hero p { max-width: 660px; margin: 0 auto 40px; font-size: 1.18rem; color: var(--warm-gray); }
 
-    /* ── DISCLOSURE ── */
-    .disclosure-bar {
-      background: #fff8e8;
-      border-top: 3px solid var(--amber);
-      text-align: center; padding: 14px 24px;
-      font-size: 0.82rem; color: #6b5530;
-    }
-    .disclosure-bar strong { color: var(--amber-dark); }
-
-    /* ── SECTION HEADER ── */
-    .section-header { text-align: center; padding: 72px 24px 48px; }
-    .section-header .label {
-      font-size: 0.72rem; font-weight: 600;
-      letter-spacing: 3px; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 14px;
-    }
-    .section-header h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700; color: var(--ink);
-      letter-spacing: -1px; line-height: 1.1;
-    }
-    .section-header p {
-      margin-top: 14px; color: var(--warm-gray);
-      font-size: 1rem; max-width: 560px;
-      margin-left: auto; margin-right: auto;
-      line-height: 1.7;
-    }
-
-    /* ── GRID ── */
-    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px 80px; }
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 28px;
-    }
-    .cards-grid .card:first-child {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-    }
-
-    /* ── CARD ── */
-    .card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: transform 0.25s, box-shadow 0.25s;
-      box-shadow: 0 2px 12px rgba(26,18,8,0.06);
-      text-decoration: none; color: inherit;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(26,18,8,0.13);
-    }
-    .card-accent {
-      height: 4px;
-      background: linear-gradient(90deg, var(--amber), var(--amber-light));
-    }
-    .card-body { padding: 32px 32px 24px; flex: 1; display: flex; flex-direction: column; }
-    .card-number {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem; font-weight: 900;
-      color: rgba(201,125,46,0.10);
-      line-height: 1; margin-bottom: -8px;
-      user-select: none;
-    }
-    .card-tag {
-      font-size: 0.68rem; font-weight: 600;
-      letter-spacing: 2px; text-transform: uppercase;
-      color: var(--amber); margin-bottom: 10px;
-    }
-    .card-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.4rem; font-weight: 400;
-      color: var(--ink); line-height: 1.25;
-      margin-bottom: 12px;
-    }
-    .card-desc { font-size: 0.9rem; color: var(--warm-gray); line-height: 1.65; flex: 1; }
-    .card-features { list-style: none; margin: 16px 0 0; display: flex; flex-direction: column; gap: 7px; }
-    .card-features li { font-size: 0.84rem; color: #5a4d3a; display: flex; align-items: flex-start; gap: 8px; }
-    .card-features li::before { content: '✦'; color: var(--amber); font-size: 0.6rem; margin-top: 4px; flex-shrink: 0; }
-    .card-footer { padding: 0 32px 28px; }
-    .cta-button {
-      display: block;
-      background: var(--amber);
-      color: var(--white);
-      text-align: center;
-      padding: 15px 24px;
-      font-size: 0.88rem; font-weight: 600;
-      letter-spacing: 0.5px; border-radius: 10px;
-      text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
-      border: 1.5px solid var(--amber);
-    }
-    .cta-button:hover { background: var(--amber-dark); border-color: var(--amber-dark); transform: translateY(-1px); }
-    .cta-button.primary {
+    .cta-main {
       background: linear-gradient(135deg, var(--amber), var(--amber-light));
-      color: var(--ink); border-color: transparent;
-      font-size: 1rem; padding: 18px 28px;
+      color: var(--ink); padding: 18px 48px; font-size: 1.15rem; font-weight: 700;
+      border-radius: 14px; text-decoration: none; display: inline-block;
+      box-shadow: 0 10px 25px rgba(201,125,46,0.35);
     }
-    .cta-button.primary:hover { background: linear-gradient(135deg, var(--amber-dark), var(--amber)); color: var(--white); }
+    .cta-main:hover { transform: translateY(-4px); }
 
-    /* Featured card */
-    .card.featured .card-body { padding: 48px 48px 32px; }
-    .card.featured .card-title { font-size: 2rem; }
-    .card.featured .card-number { font-size: 6rem; }
-    .card.featured .card-footer { padding: 0 48px 40px; }
+    .disclosure {
+      background: #fff8e8; border-left: 6px solid var(--amber);
+      padding: 20px 36px; max-width: 1100px; margin: 40px auto;
+      font-size: 0.97rem; color: #6b5530;
+    }
 
-    /* Card visual image area */
+    .section { max-width: 1100px; margin: 90px auto; padding: 0 40px; }
+    .section-header { text-align: center; margin-bottom: 70px; }
+    .section-header span { font-size: 0.85rem; font-weight: 600; letter-spacing: 3px; color: var(--amber); text-transform: uppercase; }
+    .section-header h2 { font-size: 2.9rem; margin-top: 12px; }
+
+    .ranked-list {
+      display: flex; flex-direction: column; gap: 42px;
+    }
+    .tool-card {
+      background: white; border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--border); box-shadow: 0 12px 35px rgba(26,18,8,0.09);
+      display: grid; grid-template-columns: 280px 1fr; gap: 0;
+      transition: all 0.3s;
+    }
+    .tool-card:hover { transform: translateY(-8px); box-shadow: 0 24px 50px rgba(201,125,46,0.22); }
+    .tool-card.featured { border: 3px solid var(--amber); }
+
     .card-visual {
-      overflow: hidden;
-      display: flex; align-items: center; justify-content: center;
-      min-height: 280px;
-      position: relative;
+      background: #f9f1e3; display: flex; align-items: center; justify-content: center;
+      font-size: 4.5rem; padding: 40px; position: relative;
     }
-    .card-visual svg { width: 100%; height: 100%; display: block; }
-    .card-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-visual::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent, rgba(201,125,46,0.08));
+    }
 
-    /* ── BADGE ── */
-    .badge {
-      display: inline-block;
+    .card-content {
+      padding: 38px 42px; display: flex; flex-direction: column;
+    }
+    .ranking {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+    }
+    .rank-number {
+      font-size: 2.8rem; font-weight: 900; color: var(--amber); line-height: 1;
+    }
+    .score {
+      font-size: 1.35rem; font-weight: 700; color: #2e7d32;
+    }
+    .stars { color: #f59e0b; font-size: 1.1rem; }
+
+    .card-title {
+      font-size: 1.65rem; line-height: 1.25; margin-bottom: 14px;
+    }
+    .best-for {
+      display: inline-block; background: #fef3c7; color: #92400e;
+      padding: 4px 14px; border-radius: 9999px; font-size: 0.82rem;
+      font-weight: 600; margin-bottom: 16px;
+    }
+    .card-desc { color: var(--warm-gray); margin-bottom: 22px; }
+    .features { list-style: none; margin-bottom: 28px; }
+    .features li { padding: 7px 0; display: flex; gap: 10px; font-size: 0.97rem; }
+    .features li::before { content: "✓"; color: var(--amber); font-weight: bold; }
+
+    .cta-button {
+      margin-top: auto; display: block; text-align: center;
       background: linear-gradient(135deg, var(--amber), var(--amber-light));
-      color: var(--white);
-      font-size: 0.7rem; font-weight: 700;
-      letter-spacing: 1px; text-transform: uppercase;
-      padding: 3px 10px; border-radius: 100px;
-      margin-bottom: 10px;
+      color: var(--ink); padding: 17px 32px; font-weight: 700;
+      border-radius: 12px; text-decoration: none; font-size: 1.02rem;
     }
+    .cta-button:hover { background: var(--amber-dark); color: white; }
 
-    /* ── DIVIDER ── */
-    .divider { width: 64px; height: 3px; background: linear-gradient(90deg, var(--amber), transparent); margin: 20px 0; border-radius: 2px; }
-
-    /* ── FOOTER ── */
     footer {
-      background: #2a1f12;
-      color: #7a6d5c;
-      text-align: center; padding: 56px 24px;
-      border-top: 2px solid var(--amber);
+      background: #2a1f12; color: #a38f72; text-align: center;
+      padding: 90px 40px 50px; margin-top: 120px;
     }
-    footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 900; color: var(--amber-light); margin-bottom: 16px; }
-    footer p { font-size: 0.84rem; line-height: 1.8; }
-    footer .footer-links { display: flex; gap: 24px; justify-content: center; list-style: none; margin: 20px 0; }
-    footer .footer-links a { color: #7a6d5c; text-decoration: none; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
-    footer .footer-links a:hover { color: var(--amber-light); }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      nav { padding: 0 20px; }
-      .nav-links { gap: 18px; }
-      .nav-links a { font-size: 0.72rem; }
-      .hero { padding: 64px 24px 56px; }
-      .cards-grid .card:first-child { grid-column: 1; display: flex; flex-direction: column; }
-      .card-visual { min-height: 200px; }
-      .card.featured .card-body { padding: 28px 24px 20px; }
-      .card.featured .card-footer { padding: 0 24px 28px; }
-      .card.featured .card-title { font-size: 1.6rem; }
+    footer .logo {
+      font-family: 'Playfair Display', serif; font-size: 2.4rem;
+      color: var(--amber-light); margin-bottom: 20px;
     }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+    @media (max-width: 920px) {
+      .tool-card { grid-template-columns: 1fr; }
+      .card-visual { height: 180px; font-size: 3.5rem; }
     }
-    .hero > * { animation: fadeUp 0.7s ease both; }
-    .hero-eyebrow { animation-delay: 0.1s; }
-    .hero h1     { animation-delay: 0.2s; }
-    .hero-sub    { animation-delay: 0.35s; }
-    .hero-tags   { animation-delay: 0.5s; }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="index.html" class="nav-logo">TravelHackHub</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+    <ul style="display:flex; gap:32px; list-style:none;">
       <li><a href="#">Deals</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-eyebrow">Travel Smarter in 2026</div>
-    <h1>Your Guide to<br><em>Cheaper Travel</em></h1>
-    <p class="hero-sub">Hand-picked tools and deals I actually use — from cheap flights and eSIMs to VPNs and flight compensation.</p>
-    <div class="hero-tags">
-      <a href="aviasales.html" class="hero-tag">✈ Cheap Flights</a>
-      <a href="esim-comparison.html" class="hero-tag">📱 eSIM Data</a>
-      <a href="klook.html" class="hero-tag">🗺 Tours & Activities</a>
-      <a href="nordvpn.html" class="hero-tag">🔒 VPN Security</a>
-      <a href="remitly.html" class="hero-tag">💸 Money Transfers</a>
-      <a href="#compensair" class="hero-tag">🛡 Flight Compensation</a>
-    </div>
+    <div class="hero-badge">UPDATED APRIL 2026</div>
+    <h1>The <em>Best Travel Tools</em> I Actually Use in 2026</h1>
+    <p>Ranked by real savings and usefulness. These are the exact services that help me find cheap flights, stay connected, book activities, and travel smarter.</p>
+    <a href="#tools" class="cta-main">See the Full Ranked List ↓</a>
   </section>
 
-  <!-- DISCLOSURE -->
-  <div class="disclosure-bar">
-    <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. Thank you for supporting TravelHackHub!
+  <div class="disclosure">
+    <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you sign up or purchase through them, I may earn a small commission at no extra cost to you. All opinions are my own.
   </div>
 
-  <!-- SECTION HEADER -->
-  <div class="section-header">
-    <div class="label">Handpicked Recommendations</div>
-    <h2>The Tools That Save Me Money Every Trip</h2>
-    <p>Click any card to explore the current deals and start saving on your next adventure.</p>
-  </div>
+  <div class="section" id="tools">
+    <div class="section-header">
+      <span>Honest Rankings • Real Traveler Tested</span>
+      <h2>Top Travel Tools & Deals 2026</h2>
+    </div>
 
-  <!-- CARDS -->
-  <div class="container">
-    <div class="cards-grid">
+    <div class="ranked-list">
 
-      <!-- 1. KLOOK — Featured -->
-      <a href="klook.html" class="card featured">
-        <div class="card-visual">
-          <!-- Klook: vibrant travel/tours illustration -->
-          <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" style="min-height:280px">
-            <defs>
-              <linearGradient id="kbg" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#ff6b35"/>
-                <stop offset="100%" style="stop-color:#f7931e"/>
-              </linearGradient>
-              <linearGradient id="ksky" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:#1a6b9e"/>
-                <stop offset="100%" style="stop-color:#5ba4cf"/>
-              </linearGradient>
-            </defs>
-            <!-- Sky -->
-            <rect width="600" height="320" fill="url(#ksky)"/>
-            <!-- Sun -->
-            <circle cx="480" cy="70" r="48" fill="#f7d060" opacity="0.9"/>
-            <circle cx="480" cy="70" r="36" fill="#fce570"/>
-            <!-- Clouds -->
-            <ellipse cx="100" cy="80" rx="60" ry="22" fill="white" opacity="0.7"/>
-            <ellipse cx="140" cy="72" rx="40" ry="18" fill="white" opacity="0.7"/>
-            <ellipse cx="350" cy="50" rx="50" ry="18" fill="white" opacity="0.5"/>
-            <!-- Mountain -->
-            <polygon points="0,320 180,120 360,320" fill="#2d5a27" opacity="0.9"/>
-            <polygon points="150,320 330,100 510,320" fill="#3a7a30" opacity="0.8"/>
-            <polygon points="300,320 450,140 600,320" fill="#4a9a40" opacity="0.7"/>
-            <!-- Snow caps -->
-            <polygon points="180,120 160,165 200,165" fill="white" opacity="0.85"/>
-            <polygon points="330,100 308,150 352,150" fill="white" opacity="0.85"/>
-            <!-- Ground -->
-            <rect y="285" width="600" height="35" fill="#5a8a40"/>
-            <!-- Path -->
-            <path d="M260 320 Q300 280 340 260 Q370 250 390 320" fill="none" stroke="#c8a56a" stroke-width="14" opacity="0.7"/>
-            <!-- Airplane -->
-            <g transform="translate(200,95) rotate(-15)">
-              <ellipse cx="0" cy="0" rx="28" ry="9" fill="white"/>
-              <polygon points="-10,-9 10,-9 6,-20" fill="white"/>
-              <polygon points="-28,3 -14,3 -20,14" fill="white" opacity="0.8"/>
-              <rect x="-28" y="-2" width="56" height="4" fill="white"/>
-            </g>
-            <!-- Tourist figure -->
-            <g transform="translate(290,235)">
-              <circle cx="0" cy="-30" r="10" fill="#f5c89a"/>
-              <rect x="-8" y="-20" width="16" height="22" fill="#ff6b35" rx="3"/>
-              <line x1="-8" y1="-10" x2="-18" y2="5" stroke="#f5c89a" stroke-width="3"/>
-              <line x1="8" y1="-10" x2="18" y2="5" stroke="#f5c89a" stroke-width="3"/>
-              <line x1="-5" y1="2" x2="-7" y2="22" stroke="#4a3020" stroke-width="3"/>
-              <line x1="5" y1="2" x2="7" y2="22" stroke="#4a3020" stroke-width="3"/>
-              <!-- Hat -->
-              <ellipse cx="0" cy="-40" rx="13" ry="4" fill="#f7931e"/>
-              <rect x="-7" y="-50" width="14" height="12" fill="#f7931e" rx="2"/>
-            </g>
-            <!-- Camera icon -->
-            <g transform="translate(44,240)">
-              <rect x="0" y="0" width="44" height="32" fill="white" rx="5" opacity="0.9"/>
-              <circle cx="22" cy="16" r="9" fill="none" stroke="#333" stroke-width="2.5"/>
-              <circle cx="22" cy="16" r="4" fill="#333"/>
-              <rect x="14" y="-5" width="10" height="7" fill="white" rx="2" opacity="0.9"/>
-            </g>
-            <!-- Stars/sparkles -->
-            <text x="540" y="100" font-size="22" fill="#fce570" opacity="0.8">★</text>
-            <text x="40" y="140" font-size="14" fill="white" opacity="0.6">✦</text>
-            <text x="520" y="160" font-size="10" fill="white" opacity="0.5">✦</text>
-          </svg>
-        </div>
-        <div>
-          <div class="card-accent"></div>
-          <div class="card-body">
-            <div class="card-number">01</div>
-            <div class="badge">🔥 Editor's Pick</div>
-            <div class="card-tag">Tours · Activities · Theme Parks</div>
-            <h2 class="card-title">Klook – Save Up to 50% on Tours & Attractions</h2>
-            <p class="card-desc">Book theme parks, skip-the-line tickets, city tours, transfers & unique experiences in 200+ cities — often 30–50% cheaper than the gate price.</p>
-            <div class="divider"></div>
-            <ul class="card-features">
-              <li>10% OFF Vietnam Tours (code: VNTOURS26)</li>
-              <li>50% OFF China High Speed Rail — Buy 1 Get 1</li>
-              <li>Up to $150 OFF sitewide flash sales</li>
-              <li>Big savings on Universal Studios, Tokyo Disneyland & more</li>
-            </ul>
+      <!-- 1. Klook -->
+      <a href="klook.html" class="tool-card featured">
+        <div class="card-visual">🗺️</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">1</span>
+            <span class="score">9.8/10</span>
+            <span class="stars">★★★★★</span>
           </div>
-          <div class="card-footer">
-            <span class="cta-button primary">Browse Klook Deals Now →</span>
-          </div>
+          <div class="best-for">Editor's Choice • Best for Attractions</div>
+          <h2 class="card-title">Klook – Save Up to 50% on Tours & Theme Parks</h2>
+          <p class="card-desc">Instant mobile tickets for skip-the-line entry, theme parks, tours, and experiences worldwide.</p>
+          <ul class="features">
+            <li>Biggest discounts on popular attractions</li>
+            <li>Free cancellation on most bookings</li>
+            <li>Flash sales updated daily</li>
+          </ul>
+          <span class="cta-button">Browse Current Klook Deals →</span>
         </div>
       </a>
 
-      <!-- 2. AVIASALES -->
-      <a href="aviasales.html" class="card">
-        <div class="card-accent"></div>
-        <!-- Flight illustration -->
-        <div style="background:linear-gradient(135deg,#e8f4fd,#c8e6f7);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <defs>
-              <linearGradient id="planebg" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#4fc3f7"/>
-                <stop offset="100%" style="stop-color:#0288d1"/>
-              </linearGradient>
-            </defs>
-            <!-- Sky -->
-            <rect width="220" height="130" fill="url(#planebg)" rx="12"/>
-            <!-- Clouds -->
-            <ellipse cx="30" cy="35" rx="28" ry="11" fill="white" opacity="0.8"/>
-            <ellipse cx="50" cy="30" rx="20" ry="9" fill="white" opacity="0.8"/>
-            <ellipse cx="170" cy="20" rx="24" ry="9" fill="white" opacity="0.6"/>
-            <ellipse cx="185" cy="16" rx="16" ry="7" fill="white" opacity="0.6"/>
-            <!-- Dotted flight path -->
-            <path d="M20 100 Q80 40 200 30" fill="none" stroke="white" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
-            <!-- Airplane body -->
-            <g transform="translate(135,50) rotate(-25)">
-              <ellipse cx="0" cy="0" rx="30" ry="8" fill="white"/>
-              <!-- Wings -->
-              <polygon points="-10,-8 12,-8 18,-22 -4,-22" fill="#e0e0e0"/>
-              <!-- Tail -->
-              <polygon points="-30,3 -18,3 -22,15" fill="#e0e0e0"/>
-              <!-- Windows -->
-              <circle cx="-5" cy="-2" r="3" fill="#b3d9f7"/>
-              <circle cx="5" cy="-2" r="3" fill="#b3d9f7"/>
-              <circle cx="15" cy="-2" r="3" fill="#b3d9f7"/>
-            </g>
-            <!-- Price tag -->
-            <rect x="10" y="85" width="80" height="32" fill="white" rx="8" opacity="0.92"/>
-            <text x="50" y="98" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="#0288d1">BEST PRICE</text>
-            <text x="50" y="111" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#c97d2e">$94 →</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">02</div>
-          <div class="card-tag">Flights · Price Alerts</div>
-          <h2 class="card-title">Aviasales – Find the Cheapest Flights</h2>
-          <p class="card-desc">Powerful flight search engine comparing hundreds of airlines instantly — great for Europe, Asia & international routes.</p>
-          <ul class="card-features">
-            <li>Flexible dates & "Everywhere" search</li>
-            <li>Price alerts and calendar view</li>
+      <!-- 2. Aviasales -->
+      <a href="aviasales.html" class="tool-card">
+        <div class="card-visual">✈️</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">2</span>
+            <span class="score">9.6/10</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <h2 class="card-title">Aviasales – Cheapest Flights Finder</h2>
+          <p class="card-desc">Powerful search with "Everywhere" mode and flexible dates. Excellent for Europe & Asia routes.</p>
+          <ul class="features">
+            <li>Compares 2000+ airlines instantly</li>
+            <li>Price alerts & hidden cheap routes</li>
             <li>Often beats Google Flights & Skyscanner</li>
           </ul>
-        </div>
-        <div class="card-footer">
-          <span class="cta-button">Search Cheap Flights →</span>
+          <span class="cta-button">Search Cheap Flights Now →</span>
         </div>
       </a>
 
-      <!-- 3. YESIM -->
-      <a href="esim-comparison.html" class="card">
-        <div class="card-accent"></div>
-        <!-- eSIM / phone illustration -->
-        <div style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="linear-gradient(135deg,#e8f5e9,#c8e6c9)" rx="12"/>
-            <rect width="220" height="130" fill="#e0f2e9" rx="12"/>
-            <!-- Globe with signal rings -->
-            <circle cx="110" cy="65" r="45" fill="none" stroke="#4caf50" stroke-width="2" opacity="0.4"/>
-            <circle cx="110" cy="65" r="32" fill="none" stroke="#4caf50" stroke-width="2" opacity="0.5"/>
-            <circle cx="110" cy="65" r="20" fill="none" stroke="#4caf50" stroke-width="2.5" opacity="0.7"/>
-            <!-- Phone -->
-            <rect x="90" y="30" width="40" height="70" fill="#1a5c2a" rx="8"/>
-            <rect x="93" y="36" width="34" height="54" fill="#e8f5e9" rx="4"/>
-            <!-- Screen content – signal bars -->
-            <rect x="100" y="70" width="5" height="8" fill="#4caf50" rx="1"/>
-            <rect x="108" y="65" width="5" height="13" fill="#4caf50" rx="1"/>
-            <rect x="116" y="58" width="5" height="20" fill="#4caf50" rx="1"/>
-            <!-- Data badge -->
-            <rect x="97" y="43" width="30" height="16" fill="#4caf50" rx="4"/>
-            <text x="112" y="55" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="white">eSIM</text>
-            <!-- Circle dots for countries -->
-            <circle cx="60" cy="35" r="5" fill="#4caf50" opacity="0.7"/>
-            <circle cx="165" cy="50" r="4" fill="#4caf50" opacity="0.6"/>
-            <circle cx="45" cy="90" r="4" fill="#81c784" opacity="0.6"/>
-            <circle cx="170" cy="95" r="5" fill="#81c784" opacity="0.7"/>
-            <!-- Connecting lines -->
-            <line x1="60" y1="35" x2="93" y2="55" stroke="#4caf50" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
-            <line x1="165" y1="50" x2="127" y2="55" stroke="#4caf50" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.5"/>
-            <!-- 150+ text -->
-            <text x="110" y="118" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#2e7d32" opacity="0.8">150+ Countries</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">03</div>
-          <div class="badge">Unlimited Data</div>
-          <div class="card-tag">eSIM · 150+ Countries</div>
-          <h2 class="card-title">Yesim eSIM – Unlimited Data Abroad</h2>
-          <p class="card-desc">Truly unlimited plans across 150+ countries — no SIM swapping, instant activation, great for longer trips.</p>
-          <ul class="card-features">
-            <li>Unlimited data, no fair-use throttling</li>
-            <li>Instant setup in under 60 seconds</li>
-            <li>10–20% off for new users</li>
+      <!-- 3. eSIM Comparison -->
+      <a href="esim-comparison.html" class="tool-card">
+        <div class="card-visual">📱</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">3</span>
+            <span class="score">9.5/10</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <div class="best-for">Best for Staying Connected</div>
+          <h2 class="card-title">Yesim vs Airalo vs Saily – Best Travel eSIMs</h2>
+          <p class="card-desc">Unlimited or flexible data in 150–200+ countries. No more expensive roaming.</p>
+          <ul class="features">
+            <li>Instant activation</li>
+            <li>Great for streaming & remote work</li>
+            <li>Saily offers best price + privacy</li>
           </ul>
-        </div>
-        <div class="card-footer">
-          <span class="cta-button">Get Yesim eSIM →</span>
+          <span class="cta-button">Compare eSIM Deals →</span>
         </div>
       </a>
 
-      <!-- 4. AIRALO -->
-      <a href="esim-comparison.html" class="card">
-        <div class="card-accent"></div>
-        <!-- Airalo world map illustration -->
-        <div style="background:linear-gradient(135deg,#fff8e1,#ffe0b2);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#fff3e0" rx="12"/>
-            <!-- Simplified world map -->
-            <ellipse cx="110" cy="65" rx="90" ry="52" fill="none" stroke="#ffb74d" stroke-width="1.5" opacity="0.5"/>
-            <!-- Continents (simplified blobs) -->
-            <path d="M55 45 Q65 30 80 38 Q90 35 95 48 Q92 62 78 65 Q60 65 55 55 Z" fill="#f9a825" opacity="0.7"/>
-            <path d="M100 40 Q115 28 135 35 Q150 40 148 58 Q140 72 122 70 Q105 65 102 52 Z" fill="#f9a825" opacity="0.65"/>
-            <path d="M158 55 Q170 48 178 55 Q182 65 175 72 Q165 75 158 68 Z" fill="#f9a825" opacity="0.6"/>
-            <path d="M60 72 Q72 68 82 75 Q85 88 75 92 Q63 90 60 82 Z" fill="#f9a825" opacity="0.6"/>
-            <!-- Pin dots -->
-            <circle cx="82" cy="50" r="5" fill="#c97d2e"/>
-            <circle cx="125" cy="48" r="5" fill="#c97d2e"/>
-            <circle cx="168" cy="62" r="4" fill="#c97d2e"/>
-            <circle cx="72" cy="80" r="4" fill="#c97d2e"/>
-            <!-- 200+ label -->
-            <rect x="72" y="105" width="76" height="18" fill="#c97d2e" rx="9"/>
-            <text x="110" y="118" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white">200+ Countries</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">04</div>
-          <div class="card-tag">eSIM · 200+ Countries</div>
-          <h2 class="card-title">Airalo – Most Popular Travel eSIM</h2>
-          <p class="card-desc">Reliable pay-as-you-go eSIM trusted by millions. Perfect for short trips with easy top-ups and clear pricing.</p>
-          <ul class="card-features">
-            <li>200+ country coverage — widest available</li>
-            <li>Top up anytime, no contract</li>
-            <li>Real-time data usage tracking</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <span class="cta-button">Buy Airalo eSIM →</span>
-        </div>
-      </a>
-
-      <!-- 5. SAILY -->
-      <a href="esim-comparison.html" class="card">
-        <div class="card-accent"></div>
-        <!-- Saily shield/security illustration -->
-        <div style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#e8f4fd" rx="12"/>
-            <!-- Shield -->
-            <path d="M110 20 L150 38 L150 78 Q150 105 110 118 Q70 105 70 78 L70 38 Z" fill="#1565c0" opacity="0.15"/>
-            <path d="M110 24 L146 40 L146 78 Q146 102 110 114 Q74 102 74 78 L74 40 Z" fill="none" stroke="#1976d2" stroke-width="2.5"/>
-            <!-- WiFi / signal in shield -->
-            <path d="M95 72 Q110 58 125 72" fill="none" stroke="#1976d2" stroke-width="3" stroke-linecap="round"/>
-            <path d="M89 80 Q110 62 131 80" fill="none" stroke="#1976d2" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
-            <circle cx="110" cy="84" r="5" fill="#1976d2"/>
-            <!-- NordVPN badge -->
-            <rect x="75" y="108" width="70" height="16" fill="#1565c0" rx="8"/>
-            <text x="110" y="120" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="white">by NordVPN</text>
-            <!-- Sparkle stars -->
-            <text x="42" y="42" font-size="16" fill="#1976d2" opacity="0.5">✦</text>
-            <text x="168" y="55" font-size="12" fill="#1976d2" opacity="0.4">✦</text>
-            <text x="155" y="100" font-size="10" fill="#42a5f5" opacity="0.5">✦</text>
-            <!-- Best value label -->
-            <rect x="10" y="10" width="60" height="18" fill="#f7931e" rx="9"/>
-            <text x="40" y="23" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="white">Best Value</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">05</div>
-          <div class="badge">Best Value</div>
-          <div class="card-tag">eSIM · By NordVPN</div>
-          <h2 class="card-title">Saily eSIM – Cheapest Unlimited Plans</h2>
-          <p class="card-desc">Affordable unlimited data from the NordVPN team — with built-in ad blocking and privacy protection.</p>
-          <ul class="card-features">
-            <li>Lowest price unlimited in many regions</li>
-            <li>Built-in ad blocker & web protection</li>
-            <li>Great for heavy streaming & video calls</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <span class="cta-button">Try Saily eSIM →</span>
-        </div>
-      </a>
-
-      <!-- 6. NORDVPN -->
-      <a href="nordvpn.html" class="card">
-        <div class="card-accent"></div>
-        <!-- VPN lock illustration -->
-        <div style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#fde8ef" rx="12"/>
-            <!-- Lock body -->
-            <rect x="80" y="60" width="60" height="48" fill="#c62828" rx="8"/>
-            <rect x="85" y="65" width="50" height="38" fill="#e53935" rx="6"/>
-            <!-- Lock shackle -->
-            <path d="M93 60 L93 45 Q110 28 127 45 L127 60" fill="none" stroke="#c62828" stroke-width="10" stroke-linecap="round"/>
-            <!-- Keyhole -->
-            <circle cx="110" cy="82" r="7" fill="#c62828"/>
-            <rect x="107" y="82" width="6" height="12" fill="#c62828" rx="2"/>
-            <!-- Circuit / VPN lines -->
-            <line x1="20" y1="30" x2="75" y2="30" stroke="#f48fb1" stroke-width="2" stroke-dasharray="4,3"/>
-            <line x1="145" y1="30" x2="200" y2="30" stroke="#f48fb1" stroke-width="2" stroke-dasharray="4,3"/>
-            <line x1="20" y1="100" x2="75" y2="100" stroke="#f48fb1" stroke-width="2" stroke-dasharray="4,3"/>
-            <line x1="145" y1="100" x2="200" y2="100" stroke="#f48fb1" stroke-width="2" stroke-dasharray="4,3"/>
-            <circle cx="20" cy="30" r="5" fill="#e91e63" opacity="0.7"/>
-            <circle cx="200" cy="30" r="5" fill="#e91e63" opacity="0.7"/>
-            <circle cx="20" cy="100" r="5" fill="#e91e63" opacity="0.7"/>
-            <circle cx="200" cy="100" r="5" fill="#e91e63" opacity="0.7"/>
-            <!-- 60% off badge -->
-            <rect x="148" y="8" width="60" height="22" fill="#c62828" rx="11"/>
-            <text x="178" y="23" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white">60%+ OFF</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">06</div>
-          <div class="card-tag">Security · Privacy</div>
-          <h2 class="card-title">NordVPN – Stay Safe on Public Wi-Fi</h2>
-          <p class="card-desc">Encrypt your connection in airports, hotels & cafes. Unlock geo-blocked content and stay private wherever you travel.</p>
-          <ul class="card-features">
-            <li>Military-grade encryption on all devices</li>
-            <li>Unlocks Netflix, BBC iPlayer & more</li>
+      <!-- 4. NordVPN -->
+      <a href="nordvpn.html" class="tool-card">
+        <div class="card-visual">🔒</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">4</span>
+            <span class="score">9.4/10</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <h2 class="card-title">NordVPN – Secure Wi-Fi & Streaming Abroad</h2>
+          <p class="card-desc">Protect your data on public networks and unlock geo-blocked content.</p>
+          <ul class="features">
+            <li>Military-grade encryption</li>
+            <li>Works on unlimited devices</li>
             <li>Often 60%+ off on 2-year plans</li>
           </ul>
-        </div>
-        <div class="card-footer">
-          <span class="cta-button">Get NordVPN Deal →</span>
+          <span class="cta-button">Grab NordVPN Deal →</span>
         </div>
       </a>
 
-      <!-- 7. REMITLY -->
-      <a href="remitly.html" class="card">
-        <div class="card-accent"></div>
-        <!-- Money transfer illustration -->
-        <div style="background:linear-gradient(135deg,#e8f5e9,#dcedc8);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#ecf7ed" rx="12"/>
-            <!-- Arrow from left to right -->
-            <rect x="20" y="57" width="180" height="16" fill="#a5d6a7" rx="8"/>
-            <polygon points="200,45 220,65 200,85" fill="#43a047"/>
-            <!-- Dollar coin left -->
-            <circle cx="45" cy="65" r="24" fill="#fdd835" stroke="#f9a825" stroke-width="2"/>
-            <text x="45" y="72" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#e65100">$</text>
-            <!-- Flag right -->
-            <circle cx="175" cy="65" r="24" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
-            <!-- Simple house for "family" -->
-            <polygon points="175,44 162,58 188,58" fill="#43a047" opacity="0.9"/>
-            <rect x="166" y="58" width="18" height="14" fill="#43a047" opacity="0.8"/>
-            <rect x="172" y="62" width="6" height="10" fill="#e8f5e9"/>
-            <!-- Minutes label -->
-            <rect x="72" y="88" width="76" height="18" fill="#2e7d32" rx="9"/>
-            <text x="110" y="101" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white">⚡ Minutes</text>
-            <!-- Speed lines -->
-            <line x1="60" y1="52" x2="85" y2="52" stroke="#81c784" stroke-width="2" opacity="0.6"/>
-            <line x1="60" y1="78" x2="85" y2="78" stroke="#81c784" stroke-width="2" opacity="0.6"/>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">07</div>
-          <div class="card-tag">Money Transfer · Global</div>
+      <!-- 5. Remitly -->
+      <a href="remitly.html" class="tool-card">
+        <div class="card-visual">💸</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">5</span>
+            <span class="score">9.2/10</span>
+            <span class="stars">★★★★☆</span>
+          </div>
           <h2 class="card-title">Remitly – Fast & Cheap Money Transfers</h2>
-          <p class="card-desc">Send money home with great rates and delivery often in minutes. Better rates than banks, lower fees than Western Union.</p>
-          <ul class="card-features">
-            <li>Bank, cash pickup & mobile wallet options</li>
-            <li>First transfer often fee-free for new users</li>
-            <li>24/7 customer support</li>
+          <p class="card-desc">Send money home quickly with excellent rates — often arrives in minutes.</p>
+          <ul class="features">
+            <li>Better than banks & Western Union</li>
+            <li>First transfer often fee-free</li>
+            <li>Bank, cash pickup & mobile wallet</li>
           </ul>
-        </div>
-        <div class="card-footer">
           <span class="cta-button">Send Money with Remitly →</span>
         </div>
       </a>
 
-      <!-- 8. BASE44 -->
-      <div class="card">
-        <div class="card-accent"></div>
-        <!-- No-code / AI illustration -->
-        <div style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#f5eafa" rx="12"/>
-            <!-- Laptop -->
-            <rect x="50" y="40" width="120" height="70" fill="#7b1fa2" rx="6"/>
-            <rect x="55" y="45" width="110" height="58" fill="#e1bee7" rx="3"/>
-            <rect x="30" y="110" width="160" height="8" fill="#6a1b9a" rx="4"/>
-            <!-- Code lines on screen -->
-            <rect x="62" y="55" width="55" height="5" fill="#7b1fa2" rx="2" opacity="0.5"/>
-            <rect x="62" y="65" width="40" height="5" fill="#9c27b0" rx="2" opacity="0.5"/>
-            <rect x="62" y="75" width="70" height="5" fill="#7b1fa2" rx="2" opacity="0.5"/>
-            <rect x="62" y="85" width="48" height="5" fill="#9c27b0" rx="2" opacity="0.5"/>
-            <!-- AI spark -->
-            <circle cx="145" cy="68" r="16" fill="#ce93d8" opacity="0.9"/>
-            <text x="145" y="74" text-anchor="middle" font-family="sans-serif" font-size="16">🤖</text>
-            <!-- Free label -->
-            <rect x="150" y="8" width="56" height="20" fill="#7b1fa2" rx="10"/>
-            <text x="178" y="22" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white">FREE Start</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">08</div>
-          <div class="card-tag">No-Code · AI Tools</div>
-          <h2 class="card-title">Base44 – Build Your Own Travel Apps</h2>
-          <p class="card-desc">Use AI to create custom expense trackers, packing lists, or trip planners in minutes — no coding required.</p>
-          <ul class="card-features">
-            <li>Zero coding knowledge needed</li>
-            <li>Ideal for digital nomads</li>
-            <li>Build fast, launch instantly</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <a href="https://base44.pxf.io/c/6070489/2049275/25619?trafcat=base" target="_blank" class="cta-button">Start Building Free →</a>
-        </div>
-      </div>
-
-      <!-- 9. LYCAMOBILE -->
-      <div class="card">
-        <div class="card-accent"></div>
-        <!-- SIM / USA illustration -->
-        <div style="background:linear-gradient(135deg,#e3f2fd,#e8eaf6);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#edf4fc" rx="12"/>
-            <!-- SIM card -->
-            <g transform="translate(70,20)">
-              <rect x="0" y="0" width="80" height="95" fill="#1565c0" rx="8"/>
-              <polygon points="0,0 18,0 0,18" fill="#0d47a1"/>
-              <rect x="12" y="28" width="56" height="8" fill="#42a5f5" rx="2" opacity="0.8"/>
-              <rect x="12" y="40" width="56" height="8" fill="#42a5f5" rx="2" opacity="0.6"/>
-              <rect x="12" y="52" width="40" height="8" fill="#42a5f5" rx="2" opacity="0.5"/>
-              <!-- USA flag simplified -->
-              <rect x="18" y="65" width="44" height="22" fill="#f44336" rx="3"/>
-              <rect x="18" y="71" width="44" height="4" fill="white" opacity="0.8"/>
-              <rect x="18" y="79" width="44" height="4" fill="white" opacity="0.8"/>
-              <rect x="18" y="65" width="20" height="10" fill="#283593"/>
-              <text x="28" y="73" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">USA</text>
-            </g>
-            <!-- Monthly label -->
-            <rect x="62" y="116" width="96" height="12" fill="transparent"/>
-            <text x="110" y="126" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1565c0" font-weight="bold">Low Monthly Plans</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">09</div>
-          <div class="card-tag">SIM · USA Stays</div>
-          <h2 class="card-title">Lycamobile USA – Affordable US SIM</h2>
-          <p class="card-desc">Great backup or alternative to eSIM for longer stays in the United States. Low monthly cost, unlimited plans available.</p>
-          <ul class="card-features">
-            <li>Perfect for 1–3 month US trips</li>
-            <li>Low monthly unlimited plans</li>
-            <li>Easy to set up on arrival</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-          <a href="https://lycamobileusa.sjv.io/qWzY3L" target="_blank" class="cta-button">Get Lycamobile SIM →</a>
-        </div>
-      </div>
-
-      <!-- 10. COMPENSAIR -->
-      <div id="compensair" class="card">
-        <div class="card-accent"></div>
-        <!-- Compensation / claim illustration -->
-        <div style="background:linear-gradient(135deg,#fff8e1,#ffecb3);padding:24px;text-align:center;min-height:160px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:220px">
-            <rect width="220" height="130" fill="#fffbea" rx="12"/>
-            <!-- Euro coin -->
-            <circle cx="80" cy="62" r="38" fill="#ffc107" stroke="#f9a825" stroke-width="2.5"/>
-            <circle cx="80" cy="62" r="28" fill="#ffca28"/>
-            <text x="80" y="72" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="#e65100">€</text>
-            <!-- 600 label -->
-            <rect x="110" y="30" width="88" height="30" fill="#f57f17" rx="8"/>
-            <text x="154" y="42" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white">UP TO</text>
-            <text x="154" y="55" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="white">€600</text>
-            <!-- Checkmark shield -->
-            <circle cx="155" cy="88" r="22" fill="#4caf50" opacity="0.9"/>
-            <path d="M144 88 L152 96 L168 78" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <!-- 97% label -->
-            <text x="80" y="115" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#f57f17" font-weight="bold">97% Success Rate</text>
-          </svg>
-        </div>
-        <div class="card-body">
-          <div class="card-number">10</div>
-          <div class="badge">No Win = No Fee</div>
-          <div class="card-tag">Compensation · Flights</div>
+      <!-- 6. Compensair -->
+      <a href="#" class="tool-card">   <!-- Add your real link if you have a compensair.html -->
+        <div class="card-visual">🛡️</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">6</span>
+            <span class="score">9.0/10</span>
+            <span class="stars">★★★★☆</span>
+          </div>
+          <div class="best-for">Best for Flight Disruptions</div>
           <h2 class="card-title">Compensair – Claim Up to €600 per Flight</h2>
-          <p class="card-desc">Delayed, cancelled or overbooked? Claim what you're owed with a 97% success rate — completely free to check.</p>
-          <ul class="card-features">
-            <li>97% success rate on claims</li>
-            <li>No win, no fee — zero risk</li>
-            <li>Free claim check in 2 minutes</li>
+          <p class="card-desc">Delayed, cancelled, or overbooked? Get compensation you’re entitled to — no win, no fee.</p>
+          <ul class="features">
+            <li>97% success rate</li>
+            <li>Free to check your claim</li>
+            <li>Works on past flights too</li>
           </ul>
+          <span class="cta-button">Check Your Flight Compensation Free →</span>
         </div>
-        <div class="card-footer">
-          <a href="https://compensair.tpk.lv/fu79k8kh" target="_blank" class="cta-button">Check Compensation Free →</a>
+      </a>
+
+      <!-- 7. Base44 -->
+      <a href="#" class="tool-card">
+        <div class="card-visual">🤖</div>
+        <div class="card-content">
+          <div class="ranking">
+            <span class="rank-number">7</span>
+            <span class="score">8.7/10</span>
+            <span class="stars">★★★★</span>
+          </div>
+          <h2 class="card-title">Base44 – Build Your Own Travel Apps with AI</h2>
+          <p class="card-desc">No-code AI tool to create custom expense trackers, packing lists, or trip planners in minutes.</p>
+          <ul class="features">
+            <li>Zero coding required</li>
+            <li>Perfect for digital nomads</li>
+            <li>Start completely free</li>
+          </ul>
+          <span class="cta-button">Start Building Free →</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">TravelHackHub</div>
-    <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Deals</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <p>Safe travels and happy saving in 2026 ✈️</p>
-    <p style="margin-top:12px; font-size:0.76rem;">© 2026 TravelHackHub · All rights reserved · Affiliate links used</p>
+    <div class="logo">TravelHackHub</div>
+    <p>Safe travels and bigger savings in 2026 ✈️</p>
+    <p style="margin-top:40px; font-size:0.82rem;">© 2026 TravelHackHub • All rights reserved • Affiliate links used</p>
   </footer>
 
 </body>
