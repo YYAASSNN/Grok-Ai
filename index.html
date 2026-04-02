@@ -3,135 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Best travel deals & tools 2026: Cheap flights, eSIMs, tours, VPN, money transfers & more. Real rankings and honest reviews.">
-  <title>TravelHackHub – Best Travel Tools & Deals 2026</title>
+  <meta name="description" content="Best travel tools & deals 2026 – cheap flights, eSIMs, tours, VPN, money transfers and more. Honest rankings.">
+  <title>TravelHackHub – Best Travel Tools 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #1a1208;
-      --cream: #f5f0e8;
-      --amber: #c97d2e;
-      --amber-light: #e8a84a;
-      --amber-dark: #8c4f10;
-      --warm-gray: #8a7d6b;
+      --ink: #1f160f;
+      --cream: #f8f4ed;
+      --amber: #b87e3f;
+      --amber-light: #d9a76b;
+      --soft-amber: #e8d5b8;
+      --warm-gray: #7a6b5a;
       --white: #ffffff;
-      --border: rgba(201,125,46,0.22);
+      --border: rgba(184, 126, 63, 0.18);
     }
     * { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 900; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.75;
+    }
 
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--white); height: 72px;
+      background: var(--white);
+      height: 70px;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 40px; border-bottom: 2px solid var(--border);
-      box-shadow: 0 4px 15px rgba(26,18,8,0.07);
+      padding: 0 40px;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     }
-    .nav-logo { font-size: 1.7rem; color: var(--amber-dark); text-decoration: none; }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      color: var(--amber);
+      text-decoration: none;
+    }
 
     .hero {
-      background: linear-gradient(135deg, #fdf8f2, #f8f0e0);
-      padding: 110px 40px 90px; text-align: center;
+      background: linear-gradient(to bottom, #fdf9f2, var(--cream));
+      padding: 100px 40px 80px;
+      text-align: center;
     }
     .hero-badge {
-      background: var(--amber); color: white;
-      padding: 8px 22px; border-radius: 9999px;
-      font-size: 0.82rem; font-weight: 700; letter-spacing: 2px;
-      display: inline-block; margin-bottom: 16px;
+      background: var(--soft-amber);
+      color: var(--amber);
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      display: inline-block;
+      margin-bottom: 20px;
     }
-    .hero h1 { font-size: clamp(2.9rem, 7vw, 5rem); margin-bottom: 24px; }
-    .hero h1 em { font-style: italic; color: var(--amber); }
-    .hero p { max-width: 660px; margin: 0 auto 40px; font-size: 1.18rem; color: var(--warm-gray); }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .hero h1 em { color: var(--amber); font-style: italic; }
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      font-size: 1.12rem;
+      color: var(--warm-gray);
+    }
 
-    .cta-main {
+    .main-cta {
       background: linear-gradient(135deg, var(--amber), var(--amber-light));
-      color: var(--ink); padding: 18px 48px; font-size: 1.15rem; font-weight: 700;
-      border-radius: 14px; text-decoration: none; display: inline-block;
-      box-shadow: 0 10px 25px rgba(201,125,46,0.35);
+      color: white;
+      padding: 16px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 6px 20px rgba(184,126,63,0.25);
     }
-    .cta-main:hover { transform: translateY(-4px); }
 
     .disclosure {
-      background: #fff8e8; border-left: 6px solid var(--amber);
-      padding: 20px 36px; max-width: 1100px; margin: 40px auto;
-      font-size: 0.97rem; color: #6b5530;
+      background: #fff9ed;
+      border-left: 5px solid var(--amber);
+      padding: 18px 30px;
+      max-width: 1100px;
+      margin: 50px auto;
+      font-size: 0.95rem;
+      color: #6b5a48;
     }
 
-    .section { max-width: 1100px; margin: 90px auto; padding: 0 40px; }
-    .section-header { text-align: center; margin-bottom: 70px; }
-    .section-header span { font-size: 0.85rem; font-weight: 600; letter-spacing: 3px; color: var(--amber); text-transform: uppercase; }
-    .section-header h2 { font-size: 2.9rem; margin-top: 12px; }
+    .section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 40px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-header span {
+      color: var(--amber);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .section-header h2 {
+      font-size: 2.7rem;
+      color: var(--ink);
+      margin-top: 10px;
+    }
 
-    .ranked-list {
-      display: flex; flex-direction: column; gap: 42px;
+    /* SMALL BEAUTIFUL CARDS */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
     }
     .tool-card {
-      background: white; border-radius: 20px; overflow: hidden;
-      border: 1px solid var(--border); box-shadow: 0 12px 35px rgba(26,18,8,0.09);
-      display: grid; grid-template-columns: 280px 1fr; gap: 0;
-      transition: all 0.3s;
+      background: var(--white);
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 25px rgba(31,22,15,0.06);
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
-    .tool-card:hover { transform: translateY(-8px); box-shadow: 0 24px 50px rgba(201,125,46,0.22); }
-    .tool-card.featured { border: 3px solid var(--amber); }
+    .tool-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(184,126,63,0.15);
+    }
 
     .card-visual {
-      background: #f9f1e3; display: flex; align-items: center; justify-content: center;
-      font-size: 4.5rem; padding: 40px; position: relative;
-    }
-    .card-visual::after {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(to bottom, transparent, rgba(201,125,46,0.08));
+      height: 180px;
+      background: var(--soft-amber);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.2rem;
+      position: relative;
     }
 
     .card-content {
-      padding: 38px 42px; display: flex; flex-direction: column;
+      padding: 26px 28px 32px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
+
     .ranking {
-      display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
     }
     .rank-number {
-      font-size: 2.8rem; font-weight: 900; color: var(--amber); line-height: 1;
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--amber);
+      line-height: 1;
     }
     .score {
-      font-size: 1.35rem; font-weight: 700; color: #2e7d32;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #3d6b2f;
     }
-    .stars { color: #f59e0b; font-size: 1.1rem; }
+    .stars { color: #e8b923; font-size: 1.1rem; }
 
     .card-title {
-      font-size: 1.65rem; line-height: 1.25; margin-bottom: 14px;
+      font-size: 1.42rem;
+      line-height: 1.3;
+      margin-bottom: 14px;
+      color: var(--ink);
     }
-    .best-for {
-      display: inline-block; background: #fef3c7; color: #92400e;
-      padding: 4px 14px; border-radius: 9999px; font-size: 0.82rem;
-      font-weight: 600; margin-bottom: 16px;
+    .card-desc {
+      color: var(--warm-gray);
+      font-size: 0.96rem;
+      margin-bottom: 20px;
+      flex: 1;
     }
-    .card-desc { color: var(--warm-gray); margin-bottom: 22px; }
-    .features { list-style: none; margin-bottom: 28px; }
-    .features li { padding: 7px 0; display: flex; gap: 10px; font-size: 0.97rem; }
-    .features li::before { content: "✓"; color: var(--amber); font-weight: bold; }
 
     .cta-button {
-      margin-top: auto; display: block; text-align: center;
+      margin-top: auto;
       background: linear-gradient(135deg, var(--amber), var(--amber-light));
-      color: var(--ink); padding: 17px 32px; font-weight: 700;
-      border-radius: 12px; text-decoration: none; font-size: 1.02rem;
+      color: white;
+      text-align: center;
+      padding: 14px 24px;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 0.98rem;
+      transition: all 0.2s;
     }
-    .cta-button:hover { background: var(--amber-dark); color: white; }
+    .cta-button:hover {
+      background: var(--amber);
+      transform: scale(1.03);
+    }
 
     footer {
-      background: #2a1f12; color: #a38f72; text-align: center;
-      padding: 90px 40px 50px; margin-top: 120px;
+      background: #2a1f12;
+      color: #a38f72;
+      text-align: center;
+      padding: 80px 40px 40px;
+      margin-top: 100px;
     }
     footer .logo {
-      font-family: 'Playfair Display', serif; font-size: 2.4rem;
-      color: var(--amber-light); margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      color: var(--amber-light);
+      margin-bottom: 16px;
     }
 
-    @media (max-width: 920px) {
-      .tool-card { grid-template-columns: 1fr; }
-      .card-visual { height: 180px; font-size: 3.5rem; }
+    @media (max-width: 768px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      nav { padding: 0 20px; }
+      .hero { padding: 80px 20px 60px; }
     }
   </style>
 </head>
@@ -139,34 +228,34 @@
 
   <nav>
     <a href="index.html" class="nav-logo">TravelHackHub</a>
-    <ul style="display:flex; gap:32px; list-style:none;">
-      <li><a href="#">Deals</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
+    <ul style="display:flex; gap:28px; list-style:none; font-size:0.9rem;">
+      <li><a href="#" style="color:var(--warm-gray); text-decoration:none;">Deals</a></li>
+      <li><a href="#" style="color:var(--warm-gray); text-decoration:none;">Blog</a></li>
+      <li><a href="#" style="color:var(--warm-gray); text-decoration:none;">About</a></li>
     </ul>
   </nav>
 
   <section class="hero">
-    <div class="hero-badge">UPDATED APRIL 2026</div>
-    <h1>The <em>Best Travel Tools</em> I Actually Use in 2026</h1>
-    <p>Ranked by real savings and usefulness. These are the exact services that help me find cheap flights, stay connected, book activities, and travel smarter.</p>
-    <a href="#tools" class="cta-main">See the Full Ranked List ↓</a>
+    <div class="hero-badge">TRAVEL SMARTER • SAVE MORE • 2026</div>
+    <h1>The <em>Best Tools</em> for Cheaper & Easier Travel</h1>
+    <p>Honest rankings of the travel apps and services I personally use to save hundreds every trip.</p>
+    <a href="#tools" class="main-cta">Explore All Tools</a>
   </section>
 
   <div class="disclosure">
-    <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you sign up or purchase through them, I may earn a small commission at no extra cost to you. All opinions are my own.
+    <strong>Affiliate Disclosure:</strong> This website contains affiliate links. If you make a purchase through them, I may earn a small commission at no extra cost to you. Thank you for your support!
   </div>
 
   <div class="section" id="tools">
     <div class="section-header">
-      <span>Honest Rankings • Real Traveler Tested</span>
-      <h2>Top Travel Tools & Deals 2026</h2>
+      <span>Curated & Ranked for 2026</span>
+      <h2>Top Travel Tools</h2>
     </div>
 
-    <div class="ranked-list">
+    <div class="cards-grid">
 
-      <!-- 1. Klook -->
-      <a href="klook.html" class="tool-card featured">
+      <!-- Card 1 -->
+      <a href="klook.html" class="tool-card">
         <div class="card-visual">🗺️</div>
         <div class="card-content">
           <div class="ranking">
@@ -174,19 +263,13 @@
             <span class="score">9.8/10</span>
             <span class="stars">★★★★★</span>
           </div>
-          <div class="best-for">Editor's Choice • Best for Attractions</div>
-          <h2 class="card-title">Klook – Save Up to 50% on Tours & Theme Parks</h2>
-          <p class="card-desc">Instant mobile tickets for skip-the-line entry, theme parks, tours, and experiences worldwide.</p>
-          <ul class="features">
-            <li>Biggest discounts on popular attractions</li>
-            <li>Free cancellation on most bookings</li>
-            <li>Flash sales updated daily</li>
-          </ul>
-          <span class="cta-button">Browse Current Klook Deals →</span>
+          <h2 class="card-title">Klook – Tours, Tickets & Attractions</h2>
+          <p class="card-desc">Save up to 50% on skip-the-line tickets, theme parks, and experiences worldwide.</p>
+          <span class="cta-button">Browse Deals →</span>
         </div>
       </a>
 
-      <!-- 2. Aviasales -->
+      <!-- Card 2 -->
       <a href="aviasales.html" class="tool-card">
         <div class="card-visual">✈️</div>
         <div class="card-content">
@@ -195,18 +278,13 @@
             <span class="score">9.6/10</span>
             <span class="stars">★★★★☆</span>
           </div>
-          <h2 class="card-title">Aviasales – Cheapest Flights Finder</h2>
-          <p class="card-desc">Powerful search with "Everywhere" mode and flexible dates. Excellent for Europe & Asia routes.</p>
-          <ul class="features">
-            <li>Compares 2000+ airlines instantly</li>
-            <li>Price alerts & hidden cheap routes</li>
-            <li>Often beats Google Flights & Skyscanner</li>
-          </ul>
-          <span class="cta-button">Search Cheap Flights Now →</span>
+          <h2 class="card-title">Aviasales – Cheapest Flights</h2>
+          <p class="card-desc">Powerful flight search with flexible dates and "Everywhere" mode.</p>
+          <span class="cta-button">Find Cheap Flights →</span>
         </div>
       </a>
 
-      <!-- 3. eSIM Comparison -->
+      <!-- Card 3 -->
       <a href="esim-comparison.html" class="tool-card">
         <div class="card-visual">📱</div>
         <div class="card-content">
@@ -215,19 +293,13 @@
             <span class="score">9.5/10</span>
             <span class="stars">★★★★☆</span>
           </div>
-          <div class="best-for">Best for Staying Connected</div>
-          <h2 class="card-title">Yesim vs Airalo vs Saily – Best Travel eSIMs</h2>
-          <p class="card-desc">Unlimited or flexible data in 150–200+ countries. No more expensive roaming.</p>
-          <ul class="features">
-            <li>Instant activation</li>
-            <li>Great for streaming & remote work</li>
-            <li>Saily offers best price + privacy</li>
-          </ul>
-          <span class="cta-button">Compare eSIM Deals →</span>
+          <h2 class="card-title">Best Travel eSIMs (Yesim • Airalo • Saily)</h2>
+          <p class="card-desc">Unlimited or flexible data abroad without expensive roaming charges.</p>
+          <span class="cta-button">Compare eSIMs →</span>
         </div>
       </a>
 
-      <!-- 4. NordVPN -->
+      <!-- Card 4 -->
       <a href="nordvpn.html" class="tool-card">
         <div class="card-visual">🔒</div>
         <div class="card-content">
@@ -236,18 +308,13 @@
             <span class="score">9.4/10</span>
             <span class="stars">★★★★☆</span>
           </div>
-          <h2 class="card-title">NordVPN – Secure Wi-Fi & Streaming Abroad</h2>
-          <p class="card-desc">Protect your data on public networks and unlock geo-blocked content.</p>
-          <ul class="features">
-            <li>Military-grade encryption</li>
-            <li>Works on unlimited devices</li>
-            <li>Often 60%+ off on 2-year plans</li>
-          </ul>
-          <span class="cta-button">Grab NordVPN Deal →</span>
+          <h2 class="card-title">NordVPN – Stay Safe & Unlock Content</h2>
+          <p class="card-desc">Protect your data on public Wi-Fi and access geo-blocked streaming.</p>
+          <span class="cta-button">Get NordVPN Deal →</span>
         </div>
       </a>
 
-      <!-- 5. Remitly -->
+      <!-- Card 5 -->
       <a href="remitly.html" class="tool-card">
         <div class="card-visual">💸</div>
         <div class="card-content">
@@ -256,19 +323,14 @@
             <span class="score">9.2/10</span>
             <span class="stars">★★★★☆</span>
           </div>
-          <h2 class="card-title">Remitly – Fast & Cheap Money Transfers</h2>
-          <p class="card-desc">Send money home quickly with excellent rates — often arrives in minutes.</p>
-          <ul class="features">
-            <li>Better than banks & Western Union</li>
-            <li>First transfer often fee-free</li>
-            <li>Bank, cash pickup & mobile wallet</li>
-          </ul>
-          <span class="cta-button">Send Money with Remitly →</span>
+          <h2 class="card-title">Remitly – Fast Money Transfers</h2>
+          <p class="card-desc">Send money abroad quickly and cheaply – often in minutes.</p>
+          <span class="cta-button">Send Money Now →</span>
         </div>
       </a>
 
-      <!-- 6. Compensair -->
-      <a href="#" class="tool-card">   <!-- Add your real link if you have a compensair.html -->
+      <!-- Card 6 -->
+      <a href="#" class="tool-card">
         <div class="card-visual">🛡️</div>
         <div class="card-content">
           <div class="ranking">
@@ -276,35 +338,24 @@
             <span class="score">9.0/10</span>
             <span class="stars">★★★★☆</span>
           </div>
-          <div class="best-for">Best for Flight Disruptions</div>
-          <h2 class="card-title">Compensair – Claim Up to €600 per Flight</h2>
-          <p class="card-desc">Delayed, cancelled, or overbooked? Get compensation you’re entitled to — no win, no fee.</p>
-          <ul class="features">
-            <li>97% success rate</li>
-            <li>Free to check your claim</li>
-            <li>Works on past flights too</li>
-          </ul>
-          <span class="cta-button">Check Your Flight Compensation Free →</span>
+          <h2 class="card-title">Compensair – Flight Compensation Claims</h2>
+          <p class="card-desc">Claim up to €600 for delayed or cancelled flights. No win, no fee.</p>
+          <span class="cta-button">Check Your Claim Free →</span>
         </div>
       </a>
 
-      <!-- 7. Base44 -->
+      <!-- Card 7 -->
       <a href="#" class="tool-card">
         <div class="card-visual">🤖</div>
         <div class="card-content">
           <div class="ranking">
             <span class="rank-number">7</span>
-            <span class="score">8.7/10</span>
+            <span class="score">8.8/10</span>
             <span class="stars">★★★★</span>
           </div>
-          <h2 class="card-title">Base44 – Build Your Own Travel Apps with AI</h2>
-          <p class="card-desc">No-code AI tool to create custom expense trackers, packing lists, or trip planners in minutes.</p>
-          <ul class="features">
-            <li>Zero coding required</li>
-            <li>Perfect for digital nomads</li>
-            <li>Start completely free</li>
-          </ul>
-          <span class="cta-button">Start Building Free →</span>
+          <h2 class="card-title">Base44 – AI Travel App Builder</h2>
+          <p class="card-desc">Build your own expense tracker, packing list or trip planner with AI – no coding needed.</p>
+          <span class="cta-button">Start for Free →</span>
         </div>
       </a>
 
@@ -313,8 +364,8 @@
 
   <footer>
     <div class="logo">TravelHackHub</div>
-    <p>Safe travels and bigger savings in 2026 ✈️</p>
-    <p style="margin-top:40px; font-size:0.82rem;">© 2026 TravelHackHub • All rights reserved • Affiliate links used</p>
+    <p>Travel smarter and save more in 2026 ✈️</p>
+    <p style="margin-top:30px; font-size:0.8rem;">© 2026 • All rights reserved • Affiliate links used</p>
   </footer>
 
 </body>
