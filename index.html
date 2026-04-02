@@ -1,251 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Best travel deals 2026: Cheap flights with Aviasales, eSIM data (Airalo, Yesim, Saily), Klook tours & attractions, NordVPN, Remitly money transfer, Lycamobile, Base44 & flight compensation with Compensair. Save big on every trip.">
-    <meta name="keywords" content="travel deals 2026, cheap flights, eSIM 2026, Airalo, Yesim, Saily, Klook deals, NordVPN, Remitly, flight compensation, budget travel hacks">
-    <title>TravelHackHub - Best Travel Deals & Savings 2026</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background: #f8f9fa;
-        }
-        header {
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
-            color: white;
-            text-align: center;
-            padding: 90px 20px;
-        }
-        h1 { font-size: 2.8em; margin: 0; }
-        .subtitle { font-size: 1.35em; margin-top: 10px; opacity: 0.95; }
-        nav {
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 0;
-            padding: 0;
-        }
-        nav a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 25px 0;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        }
-        .cta-button {
-            display: block;
-            background: linear-gradient(135deg, #ff3b5c, #ff6b7d);
-            color: white;
-            text-align: center;
-            padding: 16px 25px;
-            font-size: 1.15em;
-            font-weight: bold;
-            border-radius: 10px;
-            margin: 20px 0 10px;
-            text-decoration: none;
-        }
-        .cta-button:hover {
-            transform: scale(1.04);
-        }
-        .disclosure {
-            background: #fff3cd;
-            padding: 18px;
-            border-left: 6px solid #ffc107;
-            margin: 40px 0;
-            border-radius: 8px;
-            font-size: 0.95em;
-        }
-        footer {
-            text-align: center;
-            padding: 50px 20px;
-            background: #333;
-            color: #ddd;
-            margin-top: 60px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best travel deals 2026: Cheap flights with Aviasales, eSIM data (Airalo, Yesim, Saily), Klook tours & attractions, NordVPN, Remitly money transfer, Lycamobile, Base44 & flight compensation with Compensair.">
+  <title>TravelHackHub – Best Travel Deals & Savings 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1208;
+      --cream: #f5f0e8;
+      --amber: #c97d2e;
+      --amber-light: #e8a84a;
+      --amber-dark: #8c4f10;
+      --rust: #c0392b;
+      --sage: #4a6741;
+      --warm-gray: #8a7d6b;
+      --card-bg: #fffcf6;
+      --border: rgba(201,125,46,0.18);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--ink);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px;
+      height: 64px;
+      border-bottom: 2px solid var(--amber);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 900;
+      color: var(--amber-light);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex; gap: 36px;
+    }
+
+    .nav-links a {
+      color: #d4c9b5;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--amber-light); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+      padding: 100px 48px 80px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,125,46,0.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amber);
+      border: 1px solid var(--amber);
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3.2rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 1.02;
+      color: var(--cream);
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--amber-light);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: #b5a990;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      justify-content: center;
+    }
+
+    .hero-tag {
+      background: rgba(201,125,46,0.15);
+      color: var(--amber-light);
+      border: 1px solid rgba(201,125,46,0.35);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    /* ── DISCLOSURE ── */
+    .disclosure-bar {
+      background: #fff8e8;
+      border-top: 3px solid var(--amber);
+      text-align: center;
+      padding: 14px 24px;
+      font-size: 0.82rem;
+      color: #6b5530;
+    }
+
+    .disclosure-bar strong { color: var(--amber-dark); }
+
+    /* ── SECTION HEADER ── */
+    .section-header {
+      text-align: center;
+      padding: 72px 24px 48px;
+    }
+
+    .section-header .label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 14px;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -1px;
+      line-height: 1.1;
+    }
+
+    .section-header p {
+      margin-top: 14px;
+      color: var(--warm-gray);
+      font-size: 1rem;
+      max-width: 560px;
+      margin-left: auto; margin-right: auto;
+      line-height: 1.7;
+    }
+
+    /* ── GRID ── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    /* Featured card (first) */
+    .cards-grid .card:first-child {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 2px 12px rgba(26,18,8,0.06);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(26,18,8,0.13);
+    }
+
+    .card-accent {
+      height: 4px;
+      background: linear-gradient(90deg, var(--amber), var(--amber-light));
+    }
+
+    .card-body {
+      padding: 32px 32px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: rgba(201,125,46,0.12);
+      line-height: 1;
+      margin-bottom: -8px;
+      user-select: none;
+    }
+
+    .card-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--warm-gray);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .card-features {
+      list-style: none;
+      margin: 16px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .card-features li {
+      font-size: 0.84rem;
+      color: #5a4d3a;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .card-features li::before {
+      content: '✦';
+      color: var(--amber);
+      font-size: 0.6rem;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .card-footer {
+      padding: 0 32px 28px;
+    }
+
+    .cta-button {
+      display: block;
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center;
+      padding: 15px 24px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      border: 1.5px solid var(--ink);
+    }
+
+    .cta-button:hover {
+      background: var(--amber);
+      border-color: var(--amber);
+      color: var(--ink);
+    }
+
+    .cta-button.primary {
+      background: linear-gradient(135deg, var(--amber), var(--amber-light));
+      color: var(--ink);
+      border-color: transparent;
+      font-size: 1rem;
+      padding: 18px 28px;
+    }
+
+    .cta-button.primary:hover {
+      background: linear-gradient(135deg, var(--amber-dark), var(--amber));
+      color: var(--cream);
+    }
+
+    /* Featured card overrides */
+    .card.featured .card-body {
+      padding: 48px 48px 32px;
+    }
+
+    .card.featured .card-title {
+      font-size: 2rem;
+    }
+
+    .card.featured .card-number {
+      font-size: 6rem;
+    }
+
+    .card.featured .card-footer {
+      padding: 0 48px 40px;
+    }
+
+    .card-visual {
+      background: linear-gradient(135deg, #1a1208 0%, #3d2810 50%, #5c3a18 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-visual::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(201,125,46,0.3) 0%, transparent 60%);
+    }
+
+    .card-visual-icon {
+      font-size: 5rem;
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.4));
+    }
+
+    /* ── BADGE ── */
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--amber), var(--amber-light));
+      color: var(--ink);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 10px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--amber), transparent);
+      margin: 20px 0;
+      border-radius: 2px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: #7a6d5c;
+      text-align: center;
+      padding: 56px 24px;
+      border-top: 2px solid var(--amber);
+    }
+
+    footer .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--amber-light);
+      margin-bottom: 16px;
+    }
+
+    footer p { font-size: 0.84rem; line-height: 1.8; }
+
+    footer .footer-links {
+      display: flex; gap: 24px; justify-content: center;
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    footer .footer-links a {
+      color: #7a6d5c;
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    footer .footer-links a:hover { color: var(--amber-light); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .nav-links { gap: 18px; }
+      .nav-links a { font-size: 0.72rem; }
+
+      .hero { padding: 64px 24px 56px; }
+
+      .cards-grid .card:first-child {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-visual { min-height: 180px; }
+
+      .card.featured .card-body { padding: 28px 24px 20px; }
+      .card.featured .card-footer { padding: 0 24px 28px; }
+      .card.featured .card-title { font-size: 1.6rem; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero > * { animation: fadeUp 0.7s ease both; }
+    .hero-eyebrow { animation-delay: 0.1s; }
+    .hero h1     { animation-delay: 0.2s; }
+    .hero-sub    { animation-delay: 0.35s; }
+    .hero-tags   { animation-delay: 0.5s; }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">TravelHackHub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <header>
-        <h1>TravelHackHub</h1>
-        <p class="subtitle">Best Travel Deals & Smart Savings for 2026</p>
-        <p>Cheap flights • Reliable eSIMs • Tours & attractions • VPN • Money transfers • More</p>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Travel Smarter in 2026</div>
+    <h1>Your Guide to<br><em>Cheaper Travel</em></h1>
+    <p class="hero-sub">Hand-picked tools and deals I actually use — from cheap flights and eSIMs to VPNs and flight compensation.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">✈ Cheap Flights</span>
+      <span class="hero-tag">📱 eSIM Data</span>
+      <span class="hero-tag">🗺 Tours & Activities</span>
+      <span class="hero-tag">🔒 VPN Security</span>
+      <span class="hero-tag">💸 Money Transfers</span>
+      <span class="hero-tag">🛡 Flight Compensation</span>
+    </div>
+  </section>
 
-    <div class="container">
+  <!-- DISCLOSURE -->
+  <div class="disclosure-bar">
+    <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. Thank you for supporting TravelHackHub!
+  </div>
 
-        <h2 style="text-align:center; color:#1a73e8;">My Handpicked Tools to Travel Cheaper & Smarter in 2026</h2>
-        <p style="text-align:center; max-width:750px; margin:0 auto 40px;">
-            These are the services I actually use when traveling. Click any card below to check the current deals and start saving.
-        </p>
+  <!-- SECTION HEADER -->
+  <div class="section-header">
+    <div class="label">Handpicked Recommendations</div>
+    <h2>The Tools That Save Me Money Every Trip</h2>
+    <p>Click any card to explore the current deals and start saving on your next adventure.</p>
+  </div>
 
-        <div class="disclosure">
-            <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you buy through them, I may earn a small commission at no extra cost to you. Thank you for supporting TravelHackHub!
+  <!-- CARDS -->
+  <div class="container">
+    <div class="cards-grid">
+
+      <!-- 1. KLOOK — Featured -->
+      <div class="card featured">
+        <div class="card-visual">
+          <div class="card-visual-icon">🗺️</div>
         </div>
-
-        <!-- 1. Klook -->
-        <div class="card">
-            <h2>1. Klook – Tours, Attractions & Activities</h2>
-            <p>Save up to 50% on theme parks, skip-the-line tickets, city tours, transfers & unique experiences in 200+ cities.</p>
-            <strong>April 2026 Hot Deals:</strong>
-            <ul>
-                <li>10% OFF Vietnam Tours (code: VNTOURS26)</li>
-                <li>50% OFF China High Speed Rail (Buy 1 Get 1)</li>
-                <li>Up to $150 OFF sitewide flash sales</li>
-                <li>Big savings on Universal Studios, Tokyo Disneyland, Eiffel Tower combos & more</li>
+        <div>
+          <div class="card-accent"></div>
+          <div class="card-body">
+            <div class="card-number">01</div>
+            <div class="badge">🔥 Editor's Pick</div>
+            <div class="card-tag">Tours · Activities · Theme Parks</div>
+            <h2 class="card-title">Klook – Save Up to 50% on Tours & Attractions</h2>
+            <p class="card-desc">Book theme parks, skip-the-line tickets, city tours, transfers & unique experiences in 200+ cities — often 30–50% cheaper than the gate price.</p>
+            <div class="divider"></div>
+            <ul class="card-features">
+              <li>10% OFF Vietnam Tours (code: VNTOURS26)</li>
+              <li>50% OFF China High Speed Rail — Buy 1 Get 1</li>
+              <li>Up to $150 OFF sitewide flash sales</li>
+              <li>Big savings on Universal Studios, Tokyo Disneyland & more</li>
             </ul>
-            <a href="https://klook.tpk.lv/9Ifpbjmf" target="_blank" class="cta-button">👉 Browse Klook Deals Now</a>
+          </div>
+          <div class="card-footer">
+            <a href="https://klook.tpk.lv/9Ifpbjmf" target="_blank" class="cta-button primary">Browse Klook Deals Now →</a>
+          </div>
         </div>
+      </div>
 
-        <!-- 2. Aviasales -->
-        <div class="card">
-            <h2>2. Aviasales – Find the Cheapest Flights</h2>
-            <p>Powerful flight search engine that compares hundreds of airlines to show you the lowest fares fast.</p>
-            <ul>
-                <li>Flexible dates & "Everywhere" search</li>
-                <li>Price alerts and calendar view</li>
-                <li>Excellent for Europe, Asia & international routes</li>
-            </ul>
-            <a href="https://aviasales.tpk.lv/mu9cK9lj" target="_blank" class="cta-button">👉 Search Cheap Flights</a>
+      <!-- 2. AVIASALES -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">02</div>
+          <div class="card-tag">Flights · Price Alerts</div>
+          <h2 class="card-title">Aviasales – Find the Cheapest Flights</h2>
+          <p class="card-desc">Powerful flight search engine comparing hundreds of airlines instantly — great for Europe, Asia & international routes.</p>
+          <ul class="card-features">
+            <li>Flexible dates & "Everywhere" search</li>
+            <li>Price alerts and calendar view</li>
+            <li>Often beats Google Flights & Skyscanner</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://aviasales.tpk.lv/mu9cK9lj" target="_blank" class="cta-button">Search Cheap Flights →</a>
+        </div>
+      </div>
 
-        <!-- 3. Yesim -->
-        <div class="card">
-            <h2>3. Yesim eSIM – Unlimited Data in 150+ Countries</h2>
-            <p>Easy eSIM with unlimited plans. Stay connected without buying local SIMs.</p>
-            <ul>
-                <li>Unlimited data options</li>
-                <li>Instant activation in the app</li>
-                <li>Great for longer trips (new users often get 10-15% off first purchase)</li>
-            </ul>
-            <a href="https://yesim.tpk.lv/LYWZzJYu" target="_blank" class="cta-button">👉 Get Yesim eSIM</a>
+      <!-- 3. YESIM -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">03</div>
+          <div class="badge">Unlimited Data</div>
+          <div class="card-tag">eSIM · 150+ Countries</div>
+          <h2 class="card-title">Yesim eSIM – Unlimited Data Abroad</h2>
+          <p class="card-desc">Truly unlimited plans across 150+ countries — no SIM swapping, instant activation, great for longer trips.</p>
+          <ul class="card-features">
+            <li>Unlimited data, no fair-use throttling</li>
+            <li>Instant setup in under 60 seconds</li>
+            <li>10–20% off for new users</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://yesim.tpk.lv/LYWZzJYu" target="_blank" class="cta-button">Get Yesim eSIM →</a>
+        </div>
+      </div>
 
-        <!-- 4. Airalo -->
-        <div class="card">
-            <h2>4. Airalo eSIM – Most Popular Travel Data</h2>
-            <p>Reliable pay-as-you-go eSIM used by millions worldwide.</p>
-            <ul>
-                <li>Huge country coverage</li>
-                <li>Easy top-ups</li>
-                <li>Perfect for short trips</li>
-            </ul>
-            <a href="https://airalo.tpk.lv/Zxu8Rwcf" target="_blank" class="cta-button">👉 Buy Airalo eSIM</a>
+      <!-- 4. AIRALO -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">04</div>
+          <div class="card-tag">eSIM · 200+ Countries</div>
+          <h2 class="card-title">Airalo – Most Popular Travel eSIM</h2>
+          <p class="card-desc">Reliable pay-as-you-go eSIM trusted by millions. Perfect for short trips with easy top-ups and clear pricing.</p>
+          <ul class="card-features">
+            <li>200+ country coverage — widest available</li>
+            <li>Top up anytime, no contract</li>
+            <li>Real-time data usage tracking</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://airalo.tpk.lv/Zxu8Rwcf" target="_blank" class="cta-button">Buy Airalo eSIM →</a>
+        </div>
+      </div>
 
-        <!-- 5. Saily -->
-        <div class="card">
-            <h2>5. Saily eSIM by NordVPN – Best Value Unlimited Data</h2>
-            <p>Cheapest unlimited plans with strong security from the NordVPN team.</p>
-            <ul>
-                <li>Excellent prices in many destinations</li>
-                <li>Ad blocker & protection features</li>
-                <li>Great alternative to Airalo</li>
-            </ul>
-            <a href="https://saily.tpk.lv/ry9kvMGs" target="_blank" class="cta-button">👉 Try Saily eSIM</a>
+      <!-- 5. SAILY -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">05</div>
+          <div class="badge">Best Value</div>
+          <div class="card-tag">eSIM · By NordVPN</div>
+          <h2 class="card-title">Saily eSIM – Cheapest Unlimited Plans</h2>
+          <p class="card-desc">Affordable unlimited data from the NordVPN team — with built-in ad blocking and privacy protection.</p>
+          <ul class="card-features">
+            <li>Lowest price unlimited in many regions</li>
+            <li>Built-in ad blocker & web protection</li>
+            <li>Great for heavy streaming & video calls</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://saily.tpk.lv/ry9kvMGs" target="_blank" class="cta-button">Try Saily eSIM →</a>
+        </div>
+      </div>
 
-        <!-- 6. Base44 -->
-        <div class="card">
-            <h2>6. Base44 – Build Your Own Travel Tools (No Code)</h2>
-            <p>Use AI to create custom apps like expense trackers, packing lists or trip planners in minutes.</p>
-            <ul>
-                <li>No coding required</li>
-                <li>Build fast and simple</li>
-                <li>Ideal for digital nomads</li>
-            </ul>
-            <a href="https://base44.pxf.io/c/6070489/2049275/25619?trafcat=base" target="_blank" class="cta-button">👉 Start Building Free</a>
+      <!-- 6. NORDVPN -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">06</div>
+          <div class="card-tag">Security · Privacy</div>
+          <h2 class="card-title">NordVPN – Stay Safe on Public Wi-Fi</h2>
+          <p class="card-desc">Encrypt your connection in airports, hotels & cafes. Unlock geo-blocked content and stay private wherever you travel.</p>
+          <ul class="card-features">
+            <li>Military-grade encryption on all devices</li>
+            <li>Unlocks Netflix, BBC iPlayer & more</li>
+            <li>Often 60%+ off on 2-year plans</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://nordvpn.sjv.io/k40xmn" target="_blank" class="cta-button">Get NordVPN Deal →</a>
+        </div>
+      </div>
 
-        <!-- 7. NordVPN -->
-        <div class="card">
-            <h2>7. NordVPN – Stay Safe on Public Wi-Fi</h2>
-            <p>Protect your data in airports, hotels & cafes + unlock geo-blocked content.</p>
-            <ul>
-                <li>Military-grade encryption</li>
-                <li>Unlimited devices</li>
-                <li>Must-have for travelers</li>
-            </ul>
-            <a href="https://nordvpn.sjv.io/k40xmn" target="_blank" class="cta-button">👉 Get NordVPN Deal</a>
+      <!-- 7. REMITLY -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">07</div>
+          <div class="card-tag">Money Transfer · Global</div>
+          <h2 class="card-title">Remitly – Fast & Cheap Money Transfers</h2>
+          <p class="card-desc">Send money home with great rates and delivery often in minutes. Better rates than banks, lower fees than Western Union.</p>
+          <ul class="card-features">
+            <li>Bank, cash pickup & mobile wallet options</li>
+            <li>First transfer often fee-free for new users</li>
+            <li>24/7 customer support</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://remitly.tod8mp.net/7XazrQ" target="_blank" class="cta-button">Send Money with Remitly →</a>
+        </div>
+      </div>
 
-        <!-- 8. Remitly -->
-        <div class="card">
-            <h2>8. Remitly – Fast & Cheap Money Transfers</h2>
-            <p>Send money home with great rates and quick delivery.</p>
-            <ul>
-                <li>Transfers often in minutes</li>
-                <li>Bank, cash pickup & mobile options</li>
-                <li>Better than banks</li>
-            </ul>
-            <a href="https://remitly.tod8mp.net/7XazrQ" target="_blank" class="cta-button">👉 Send Money with Remitly</a>
+      <!-- 8. BASE44 -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">08</div>
+          <div class="card-tag">No-Code · AI Tools</div>
+          <h2 class="card-title">Base44 – Build Your Own Travel Apps</h2>
+          <p class="card-desc">Use AI to create custom expense trackers, packing lists, or trip planners in minutes — no coding required.</p>
+          <ul class="card-features">
+            <li>Zero coding knowledge needed</li>
+            <li>Ideal for digital nomads</li>
+            <li>Build fast, launch instantly</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://base44.pxf.io/c/6070489/2049275/25619?trafcat=base" target="_blank" class="cta-button">Start Building Free →</a>
+        </div>
+      </div>
 
-        <!-- 9. Lycamobile -->
-        <div class="card">
-            <h2>9. Lycamobile USA – Cheap SIM for US Stays</h2>
-            <p>Affordable unlimited plans for longer stays in the United States.</p>
-            <ul>
-                <li>Good backup or alternative to eSIM</li>
-                <li>Low monthly cost</li>
-                <li>Perfect for 1–3 month trips</li>
-            </ul>
-            <a href="https://lycamobileusa.sjv.io/qWzY3L" target="_blank" class="cta-button">👉 Get Lycamobile SIM</a>
+      <!-- 9. LYCAMOBILE -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">09</div>
+          <div class="card-tag">SIM · USA Stays</div>
+          <h2 class="card-title">Lycamobile USA – Affordable US SIM</h2>
+          <p class="card-desc">Great backup or alternative to eSIM for longer stays in the United States. Low monthly cost, unlimited plans available.</p>
+          <ul class="card-features">
+            <li>Perfect for 1–3 month US trips</li>
+            <li>Low monthly unlimited plans</li>
+            <li>Easy to set up on arrival</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://lycamobileusa.sjv.io/qWzY3L" target="_blank" class="cta-button">Get Lycamobile SIM →</a>
+        </div>
+      </div>
 
-        <!-- 10. Compensair -->
-        <div class="card">
-            <h2>10. Compensair – Claim Flight Compensation</h2>
-            <p>Delayed, cancelled or overbooked flight? Claim up to €600 per passenger.</p>
-            <ul>
-                <li>97% success rate</li>
-                <li>No win = no fee</li>
-                <li>Free claim check</li>
-            </ul>
-            <a href="https://compensair.tpk.lv/fu79k8kh" target="_blank" class="cta-button">👉 Check Your Compensation Free</a>
+      <!-- 10. COMPENSAIR -->
+      <div class="card">
+        <div class="card-accent"></div>
+        <div class="card-body">
+          <div class="card-number">10</div>
+          <div class="badge">No Win = No Fee</div>
+          <div class="card-tag">Compensation · Flights</div>
+          <h2 class="card-title">Compensair – Claim Up to €600 per Flight</h2>
+          <p class="card-desc">Delayed, cancelled or overbooked? Claim what you're owed with a 97% success rate — completely free to check.</p>
+          <ul class="card-features">
+            <li>97% success rate on claims</li>
+            <li>No win, no fee — zero risk</li>
+            <li>Free claim check in 2 minutes</li>
+          </ul>
         </div>
+        <div class="card-footer">
+          <a href="https://compensair.tpk.lv/fu79k8kh" target="_blank" class="cta-button">Check Compensation Free →</a>
+        </div>
+      </div>
 
     </div>
+  </div>
 
-    <footer>
-        <p>Thank you for visiting TravelHackHub • Safe travels and happy saving in 2026 ✈️</p>
-        <p style="font-size:0.9em; margin-top:15px;">All rights reserved • Affiliate links used</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">TravelHackHub</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>Safe travels and happy saving in 2026 ✈️</p>
+    <p style="margin-top:12px; font-size:0.76rem;">© 2026 TravelHackHub · All rights reserved · Affiliate links used</p>
+  </footer>
 
 </body>
 </html>
