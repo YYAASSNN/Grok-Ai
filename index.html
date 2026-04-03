@@ -187,6 +187,192 @@ footer{background:var(--black);color:rgba(255,255,255,.55);padding:48px 24px 24p
 .seo-card h2{font-size:22px;line-height:1.25;margin-bottom:10px}
 .seo-card p{font-size:15px;color:var(--g800)}
 @media(max-width:900px){.seo-grid{grid-template-columns:1fr}.seo-box h2{font-size:26px}}
+  /* =========================
+   MOBILE + TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .layout {
+    display: block !important;
+  }
+
+  .main-col,
+  .sidebar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .sidebar {
+    margin-top: 24px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+
+  /* HERO */
+  .hero {
+    height: auto !important;
+    min-height: 360px;
+    padding: 64px 20px 56px;
+    align-items: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 38px !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-sub {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* CATEGORY SCROLL */
+  .cat-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    gap: 10px;
+    padding: 14px 16px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .cat-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-pill {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  /* CARDS STACK */
+  .rcard {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 18px !important;
+  }
+
+  /* BUTTON FULL WIDTH */
+  .cta-col,
+  .btn,
+  .score-pill {
+    width: 100%;
+  }
+
+  /* INFO GRID */
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* SEO SECTION (your part improved) */
+  .seo-box {
+    padding: 22px !important;
+  }
+
+  .seo-box h2 {
+    font-size: 26px !important;
+  }
+
+  .seo-card {
+    padding: 18px !important;
+  }
+
+  /* SECTION HEADINGS */
+  .sec-head {
+    gap: 12px;
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+  }
+
+  .sec-head h2 {
+    font-size: 24px !important;
+    line-height: 1.2;
+  }
+
+  /* TABLE SCROLL */
+  .comp-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table.ctable {
+    min-width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .disclosure {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 10px 14px;
+  }
+
+  /* HERO SMALL */
+  .hero {
+    min-height: 320px;
+    padding: 56px 16px 44px;
+  }
+
+  .hero h1 {
+    font-size: 30px !important;
+  }
+
+  .hero-sub {
+    font-size: 14px !important;
+  }
+
+  /* PADDING FIX */
+  .seo-intro,
+  .seo-grid,
+  .page {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* CARD STYLE */
+  .seo-box,
+  .seo-card,
+  .info-card,
+  .sidebar-card,
+  .faq-item,
+  .rcard {
+    border-radius: 14px !important;
+  }
+
+  /* TEXT SCALE */
+  .sec-head h2 {
+    font-size: 21px !important;
+  }
+
+  .brand-name {
+    font-size: 20px !important;
+  }
+
+  .card-sub,
+  .card-desc,
+  .feats li,
+  .mini {
+    font-size: 14px !important;
+  }
+
+  .score-num {
+    font-size: 28px !important;
+  }
+
+  .sb-title {
+    font-size: 14px !important;
+  }
+}
 
 </style>
 </head>
