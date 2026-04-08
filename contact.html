@@ -27,93 +27,16 @@
 </nav>
 <script>(function(){var b=document.getElementById('navBurger'),m=document.getElementById('navMobile');b.addEventListener('click',function(){b.classList.toggle('open');m.classList.toggle('open');});})();</script>
 <div class="inner-page">
-  <h1>Get in Touch</h1>
-  <p class="page-date">We'd love to hear from you. Whether you have a question about a review, want to suggest a tool, or have a business enquiry, you can contact us using the form below.</p>
+  <h1>Contact</h1>
+  <p class="page-date">We aim to reply within 2 business days.</p>
   <div class="contact-card">
-    <div class="contact-note" style="margin-bottom:24px">
+    <p>If you have a question, suggestion or business enquiry, feel free to get in touch.</p>
+    <a href="/cdn-cgi/l/email-protection#026a676e6e6d427b637169636a77602c616d6f" class="email-link">&#9993; <span class="__cf_email__" data-cfemail="7018151c1c1f300911031b111805125e131f1d">[email&#160;protected]</span></a>
+    <div class="contact-note">
       <strong>Please note:</strong> YaskaHub does not provide booking support or customer service for third-party providers. For issues related to flights, hotels, eSIMs, VPNs or other services, please contact the provider directly.
-    </div>
-    <div class="contact-form-wrap">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="fname">First Name <span class="req">*</span></label>
-          <input type="text" id="fname" name="fname" placeholder="First" required>
-        </div>
-        <div class="form-group">
-          <label for="lname">Last Name <span class="req">*</span></label>
-          <input type="text" id="lname" name="lname" placeholder="Last" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="email">Email <span class="req">*</span></label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Comment or Message <span class="req">*</span></label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-      </div>
-      <button type="button" class="contact-submit" onclick="handleContactSubmit()">Send Message &rarr;</button>
-      <div id="contact-success" style="display:none;margin-top:16px;padding:14px 18px;background:#f0fdf4;color:#166534;border-radius:10px;font-weight:600;font-size:14px;">
-        &#10003; Thanks! Your message has been sent. We'll be in touch within 2 business days.
-      </div>
     </div>
   </div>
 </div>
-<style>
-.contact-form-wrap { margin-top: 8px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-@media(max-width:540px){ .form-row { grid-template-columns: 1fr; } }
-.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
-.form-group label { font-size: 13px; font-weight: 700; color: #374151; letter-spacing: .01em; }
-.req { color: #ef4444; }
-.form-group input,
-.form-group textarea {
-  border: 1.5px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 11px 14px;
-  font-family: inherit;
-  font-size: 14px;
-  color: #111827;
-  background: #fafafa;
-  outline: none;
-  transition: border-color .2s, box-shadow .2s;
-  resize: vertical;
-}
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #6366f1;
-  box-shadow: 0 0 0 3px rgba(99,102,241,.1);
-  background: #fff;
-}
-.contact-submit {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #111827;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 13px 28px;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background .2s, transform .1s;
-}
-.contact-submit:hover { background: #1f2937; transform: translateY(-1px); }
-</style>
-<script>
-function handleContactSubmit(){
-  var f=document.getElementById('fname').value.trim();
-  var l=document.getElementById('lname').value.trim();
-  var e=document.getElementById('email').value.trim();
-  var m=document.getElementById('message').value.trim();
-  if(!f||!l||!e||!m){alert('Please fill in all required fields.');return;}
-  document.getElementById('contact-success').style.display='block';
-  document.querySelector('.contact-submit').disabled=true;
-  document.querySelector('.contact-submit').textContent='Sent \u2713';
-}
-</script>
 <footer>
   <div class="fi">
     <div class="fb"><h2>YaskaHub</h2><p>Discover the best travel tools for 2026 — flights, eSIM, VPN, money transfer, hosting and more.</p></div>
