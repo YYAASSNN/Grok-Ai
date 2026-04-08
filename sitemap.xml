@@ -9,31 +9,31 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/about.html</loc>
+    <loc>https://www.yaskahub.com/about</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/contact.html</loc>
+    <loc>https://www.yaskahub.com/contact</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/affiliate-disclosure.html</loc>
+    <loc>https://www.yaskahub.com/affiliate-disclosure</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/privacy-policy.html</loc>
+    <loc>https://www.yaskahub.com/privacy-policy</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/terms-and-conditions.html</loc>
+    <loc>https://www.yaskahub.com/terms-and-conditions</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -41,67 +41,67 @@
 
   <!-- Review pages -->
   <url>
-    <loc>https://www.yaskahub.com/reviews/airalo.html</loc>
+    <loc>https://www.yaskahub.com/reviews/airalo</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/aviasales.html</loc>
+    <loc>https://www.yaskahub.com/reviews/aviasales</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/base44.html</loc>
+    <loc>https://www.yaskahub.com/reviews/base44</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/compensair.html</loc>
+    <loc>https://www.yaskahub.com/reviews/compensair</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/hostinger.html</loc>
+    <loc>https://www.yaskahub.com/reviews/hostinger</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/klook.html</loc>
+    <loc>https://www.yaskahub.com/reviews/klook</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/lycamobile.html</loc>
+    <loc>https://www.yaskahub.com/reviews/lycamobile</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/nordvpn.html</loc>
+    <loc>https://www.yaskahub.com/reviews/nordvpn</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/remitly.html</loc>
+    <loc>https://www.yaskahub.com/reviews/remitly</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/sally.html</loc>
+    <loc>https://www.yaskahub.com/reviews/sally</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yaskahub.com/reviews/yesim.html</loc>
+    <loc>https://www.yaskahub.com/reviews/yesim</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
