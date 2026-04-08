@@ -19,7 +19,7 @@
 </head>
 <body><nav class="site-nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Yaska<span>Hub</span></a>
+    <a href="index.html" class="nav-logo"><img src="https://pub-312d3078629e491faac32bc31bf01e5b.r2.dev/YaskaHub2.png" alt="YaskaHub logo" class="brand-logo-img"><span class="logo-text">YaskaHub</span></a>
     <ul class="nav-links"><li><a href="index.html" class="">Home</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="active">Contact</a></li><li><a href="affiliate-disclosure.html" class="">Disclosure</a></li><li><a href="index.html#esim" class="nav-cta">Get eSIM &rarr;</a></li></ul>
     <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -27,19 +27,82 @@
 </nav>
 <script>(function(){var b=document.getElementById('navBurger'),m=document.getElementById('navMobile');b.addEventListener('click',function(){b.classList.toggle('open');m.classList.toggle('open');});})();</script>
 <div class="inner-page">
-  <h1>Contact</h1>
-  <p class="page-date">We aim to reply within 2 business days.</p>
+  <h1>Get in Touch</h1>
+  <p class="page-date">We'd love to hear from you. Whether you have a question about a review, want to suggest a tool, or have a business enquiry, you can contact us using the form below.</p>
   <div class="contact-card">
-    <p>If you have a question, suggestion or business enquiry, feel free to get in touch.</p>
-    <a href="mailto:hello@yaskahub.com" class="email-link">&#9993; hello@yaskahub.com</a>
-    <div class="contact-note">
-      <strong>Please note:</strong> YaskaHub does not provide booking support or customer service for third-party providers. For issues related to flights, hotels, eSIMs, VPNs or other services, please contact the provider directly.
-    </div>
+    <form class="contact-form" action="https://formsubmit.co/hello@yaskahub.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.yaskahub.com/contact.html">
+      <div class="form-group">
+        <label>Name <span class="req">*</span></label>
+        <div class="form-row">
+          <div class="form-col">
+            <input type="text" name="first_name" placeholder="First" required>
+          </div>
+          <div class="form-col">
+            <input type="text" name="last_name" placeholder="Last" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email <span class="req">*</span></label>
+        <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="contact-message">Comment or Message <span class="req">*</span></label>
+        <textarea id="contact-message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message &rarr;</button>
+    </form>
   </div>
 </div>
+<style>
+.contact-form { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.5rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label { font-weight: 600; font-size: 0.95rem; color: var(--txt, #1a1a2e); }
+.req { color: #e74c3c; }
+.form-row { display: flex; gap: 1rem; }
+.form-col { flex: 1; }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #dde1f0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #f8f9ff;
+  color: #1a1a2e;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+  background: #fff;
+}
+.contact-form textarea { resize: vertical; }
+.form-submit {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #6c63ff, #48c6ef);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  font-family: inherit;
+}
+.form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+@media (max-width: 500px) { .form-row { flex-direction: column; } .form-submit { width: 100%; text-align: center; } }
+</style>
 <footer>
   <div class="fi">
-    <div class="fb"><h2>YaskaHub</h2><p>Discover the best travel tools for 2026 — flights, eSIM, VPN, money transfer, hosting and more.</p></div>
+    <div class="fb"><h2 class="footer-brand"><img src="https://pub-312d3078629e491faac32bc31bf01e5b.r2.dev/YaskaHub2.png" alt="YaskaHub logo" class="brand-logo-img">YaskaHub</h2><p>Discover the best travel tools for 2026 — flights, eSIM, VPN, money transfer, hosting and more.</p></div>
     <div class="fc"><h4>Company</h4><ul>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -56,5 +119,4 @@
       <li><a href="index.html#money">Money Transfer</a></li>
     </ul></div>
   </div>
-  <div class="fb-bot">&copy; 2026 YaskaHub. All rights reserved. | Independent reviews &amp; affiliate links.</div>
-</footer></body></html>
+  
