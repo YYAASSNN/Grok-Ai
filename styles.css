@@ -358,3 +358,11 @@ footer .fb-bot { text-align:center; margin-top:28px; font-size:13px; color:#555;
   .rcard { grid-template-columns:1fr; }
   .rbadge { width:100%; flex-direction:row; }
 }
+
+.footer-logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-logo-link:hover {
+  opacity: 0.8;
+}
