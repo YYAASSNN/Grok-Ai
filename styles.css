@@ -40,7 +40,7 @@ a { text-decoration:none; color:inherit; }
 }
 .nav-logo {
   font-size:18px; font-weight:800; letter-spacing:-.03em; color:var(--black);
-  display:flex; align-items:center; gap:8px; flex-shrink:0;
+  display:inline-flex; align-items:center; gap:0; flex-shrink:0;
 }
 .nav-logo span { color:var(--blue); }
 .nav-links {
